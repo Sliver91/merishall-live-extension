@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Merishall Live",
+  "description": "L'extension officielle de Merishall : une notification dans le navigateur dès que le live commence.",
+  "version": "0.0.1",
+  "homepage_url": "https://limeris.fr",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Merishall Live",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16-off.png",
+      "32": "icons/icon32-off.png",
+      "48": "icons/icon48-off.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["alarms", "notifications", "storage", "offscreen"],
+  "host_permissions": ["https://gql.twitch.tv/*"]
+}

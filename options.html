@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Merishall Live — Réglages</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icons/icon128.png" alt="" />
+        <div>
+          <h1>Merishall Live</h1>
+          <p>Réglages</p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Notifications</h2>
+        <label class="row">
+          <input type="checkbox" id="notifyLive" />
+          <span>
+            <strong>Lancement du live</strong>
+            <small>Une notification dès que Merishall passe en direct.</small>
+          </span>
+        </label>
+        <label class="row">
+          <input type="checkbox" id="notifyGame" />
+          <span>
+            <strong>Changement de jeu</strong>
+            <small>Une notification quand la catégorie change pendant le live.</small>
+          </span>
+        </label>
+      </section>
+
+      <section>
+        <h2>Son</h2>
+        <label class="row">
+          <input type="checkbox" id="sound" />
+          <span>
+            <strong>Jouer un son au lancement du live</strong>
+            <small>Remplace le son de notification de Windows.</small>
+          </span>
+        </label>
+        <label class="row volume" for="volume">
+          <strong>Volume</strong>
+          <input type="range" id="volume" min="0" max="100" step="5" />
+          <output id="volumeValue" for="volume"></output>
+        </label>
+      </section>
+
+      <button type="button" id="test">Tester la notification</button>
+      <p id="saved" role="status"></p>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

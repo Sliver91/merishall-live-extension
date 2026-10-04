@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Merishall Live</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img id="avatar" src="icons/icon128.png" alt="" />
+      <div>
+        <h1 id="name">Merishall</h1>
+        <span id="state" class="state">Vérification…</span>
+      </div>
+      <button id="settings" type="button" title="Réglages" aria-label="Réglages">⚙</button>
+    </header>
+
+    <section id="details" hidden>
+      <a id="thumbnail-link" target="_blank" rel="noopener">
+        <img id="thumbnail" alt="Aperçu du live" />
+      </a>
+      <p id="title"></p>
+      <p id="meta"></p>
+    </section>
+
+    <a id="watch" target="_blank" rel="noopener">Ouvrir la chaîne</a>
+
+    <nav id="links"></nav>
+
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -34,11 +34,11 @@ L'extension vérifie la chaîne toutes les minutes, tant que le navigateur est o
 
 L'extension s'installe pour l'instant en mode développeur, sur ordinateur.
 
-1. Clique sur le bouton vert **Code**, en haut de cette page, puis sur **Download ZIP**.
-2. Décompresse le zip dans un dossier qui ne bougera plus, par exemple `C:\Merishall Live`.
+1. Télécharge le fichier zip de la dernière version dans l'onglet **[Releases](https://github.com/Sliver91/merishall-live-extension/releases/latest)**.
+2. Décompresse le zip dans un dossier qui ne bougera plus, par exemple `C:\Merishall Live`. Tu dois y trouver le dossier `extension` et le fichier `LISEZ-MOI.html`, qui reprend ces étapes : double-clique dessus pour l'ouvrir.
 3. Ouvre `chrome://extensions` (ou `brave://extensions`).
 4. Active le **Mode développeur**, en haut à droite.
-5. Clique sur **Charger l'extension non empaquetée** et choisis le dossier décompressé, celui qui contient `manifest.json`.
+5. Clique sur **Charger l'extension non empaquetée** et choisis le dossier `extension` (par exemple `C:\Merishall Live\extension`).
 6. Épingle l'extension : icône en forme de pièce de puzzle dans la barre du navigateur, puis l'épingle à côté de « Merishall Live ».
 
 > **Important** — ne déplace pas, ne renomme pas et ne supprime pas ce dossier après l'installation : si le dossier bouge, l'extension disparaît du navigateur.
@@ -47,7 +47,7 @@ Si aucune notification n'apparaît, vérifie que les notifications de ton naviga
 
 ## Mise à jour
 
-1. Télécharge le nouveau zip et décompresse-le dans le même dossier, en remplaçant les fichiers.
+1. Télécharge le nouveau zip dans les **Releases** et décompresse-le dans le même dossier, en remplaçant les fichiers.
 2. Ouvre `chrome://extensions` (ou `brave://extensions`) et clique sur la flèche de rechargement de « Merishall Live ».
 
 Tes réglages sont conservés.

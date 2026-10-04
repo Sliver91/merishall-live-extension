@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merishall Live — Installation</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px 56px;
+    font: 16px/1.55 "Segoe UI", system-ui, sans-serif;
+    color: #efeff1;
+    background:
+      radial-gradient(700px 420px at 90% 0%, rgba(145, 71, 255, .28), transparent 70%),
+      #0e0e10;
+    background-repeat: no-repeat;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 12px; }
+  header img { width: 84px; height: 84px; border-radius: 50%; border: 3px solid #e91916; }
+  h1 { margin: 0; font-size: 34px; line-height: 1.1; letter-spacing: -.5px; }
+  .badge {
+    display: inline-block; margin-top: 8px; padding: 2px 10px; border-radius: 5px;
+    background: #e91916; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+  }
+  .lead { margin: 18px 0 32px; font-size: 18px; color: #c8c8d0; }
+
+  h2 { margin: 36px 0 14px; font-size: 22px; }
+
+  ol.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; display: flex; flex-direction: column; gap: 10px; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 14px 16px 14px 60px;
+    border-radius: 10px;
+    background: #18181b;
+    border: 1px solid #2f2f35;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute; left: 16px; top: 14px;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: #9147ff; font-weight: 700; font-size: 15px;
+  }
+  ol.steps strong { color: #fff; }
+
+  code {
+    padding: 1px 7px; border-radius: 5px;
+    font: 14px Consolas, "Cascadia Mono", monospace;
+    color: #d6bfff; background: #2a2144;
+    user-select: all;
+    overflow-wrap: anywhere;
+  }
+
+  .note {
+    margin-top: 16px; padding: 14px 16px; border-radius: 10px;
+    border: 1px solid #6b3b0a; background: #2a1c0a; color: #ffd9a3;
+  }
+  .note strong { color: #ffe9c7; }
+
+  dl { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  dl div { padding: 14px 16px; border-radius: 10px; background: #18181b; border: 1px solid #2f2f35; }
+  dt { font-weight: 600; color: #fff; }
+  dd { margin: 4px 0 0; color: #c8c8d0; }
+
+  a { color: #bf94ff; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid #2f2f35; font-size: 14px; color: #adadb8; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="extension/icons/icon128.png" alt="">
+    <div>
+      <h1>Merishall Live</h1>
+      <span class="badge">EXTENSION OFFICIELLE</span>
+    </div>
+  </header>
+  <p class="lead">Une notification dans ton navigateur dès que Merishall lance son live sur Twitch. L'installation prend deux minutes.</p>
+
+  <h2>Avant de commencer</h2>
+  <div class="note">
+    <strong>Place ce dossier à un endroit définitif</strong>, par exemple <code>C:\Merishall Live</code>. Le navigateur relit le dossier <code>extension</code> à chaque démarrage : si tu le déplaces, le renommes ou le supprimes, l'extension disparaît. Évite donc le Bureau et le dossier Téléchargements.
+  </div>
+
+  <h2>Installation</h2>
+  <ol class="steps">
+    <li>Ouvre Chrome ou Brave, puis copie cette adresse dans la barre d'adresse : <code>chrome://extensions</code> (sur Brave : <code>brave://extensions</code>).</li>
+    <li>Active le <strong>Mode développeur</strong>, en haut à droite de la page.</li>
+    <li>Clique sur <strong>Charger l'extension non empaquetée</strong>.</li>
+    <li>Choisis le dossier <code>extension</code>, celui qui se trouve à côté de ce fichier.</li>
+    <li>Épingle l'extension : clique sur l'icône en forme de pièce de puzzle dans la barre du navigateur, puis sur l'épingle à côté de <strong>Merishall Live</strong>.</li>
+    <li>Clique sur l'icône de l'extension, puis sur la roue crantée, puis sur <strong>Tester la notification</strong> : tu dois voir une notification et entendre un son.</li>
+  </ol>
+
+  <h2>Comment ça marche</h2>
+  <dl>
+    <div>
+      <dt>L'icône</dt>
+      <dd>Elle est grise quand Merishall est hors ligne. Pendant le live, elle passe en couleur avec un badge rouge « LIVE ».</dd>
+    </div>
+    <div>
+      <dt>Les notifications</dt>
+      <dd>Une notification avec un son au lancement du live, et une autre quand le jeu change. Un clic dessus ouvre la chaîne.</dd>
+    </div>
+    <div>
+      <dt>Les réglages</dt>
+      <dd>La roue crantée du popup permet de couper chaque notification, de couper le son et de régler son volume.</dd>
+    </div>
+  </dl>
+
+  <h2>Un problème ?</h2>
+  <dl>
+    <div>
+      <dt>Aucune notification n'apparaît</dt>
+      <dd>Vérifie que les notifications de ton navigateur sont autorisées dans Windows : Paramètres &gt; Système &gt; Notifications. Le mode « Ne pas déranger » les masque aussi.</dd>
+    </div>
+    <div>
+      <dt>Je n'ai pas été prévenu d'un live</dt>
+      <dd>L'extension ne vérifie la chaîne que lorsque le navigateur est ouvert. Si le live a commencé navigateur fermé, la notification arrive à l'ouverture.</dd>
+    </div>
+    <div>
+      <dt>L'extension a disparu</dt>
+      <dd>Le dossier <code>extension</code> a été déplacé ou supprimé. Remets-le en place et recommence l'installation.</dd>
+    </div>
+  </dl>
+
+  <h2>Mise à jour</h2>
+  <ol class="steps">
+    <li>Télécharge le nouveau zip sur <a href="https://github.com/Sliver91/merishall-live-extension/releases/latest">la page des versions</a>.</li>
+    <li>Décompresse-le dans le même dossier, en remplaçant les fichiers.</li>
+    <li>Ouvre <code>chrome://extensions</code> et clique sur la flèche de rechargement de <strong>Merishall Live</strong>. Tes réglages sont conservés.</li>
+  </ol>
+
+  <footer>
+    Développée par Sliver91 · <a href="https://limeris.fr">limeris.fr</a> · <a href="https://www.twitch.tv/merishall">twitch.tv/merishall</a><br>
+    Copyright © 2026 Sliver91 — Limeris. Tous droits réservés. Merishall Live n'est ni affiliée à Twitch ni approuvée par Twitch.
+  </footer>
+</main>
+</body>
+</html>
